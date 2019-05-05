@@ -4,12 +4,12 @@
 body {
   background-color: #e6e6e6;
 }
+
 .container {
   width: 70%;
 }
 
 /* header */
-
 #logo {
   float: left;
   margin-right: 10px;
@@ -27,9 +27,19 @@ body {
 
 /* header */
 footer {
-  width: 100%;
-  background-color: #222222;
-  height: 200px;
+  height: 150px;
+  background: #222222;
+  display: block;
+  a {
+    color: white;
+    font-size: 15px;
+    padding: 0 20px;
+  }
+}
+
+.footer {
+  padding-top: 50px;
+  text-align: center;
 }
 
 /* home */
