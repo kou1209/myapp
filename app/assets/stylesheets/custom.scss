@@ -1,17 +1,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-html,body {
-  height: 100%;
+html {
+  min-height: 100%;
+  position: relative;
 }
+
 body {
   background-color: #e6e6e6;
+  margin-bottom: 140px;
 }
 
 .container {
   width: 70%;
-  min-height: 100%;
-  position: relative;
 }
 
 /* header */
@@ -32,12 +33,11 @@ body {
 
 /* footer */
 footer {
-  height: 150px;
+  height: 140px;
   background: #222222;
-  display: block;
-  position: fixed;
-  bottom: 0;
   width: 100%;
+  position: absolute;
+  bottom: 0;
   a {
     color: white;
     font-size: 15px;
@@ -46,7 +46,7 @@ footer {
 }
 
 .footer {
-  padding-top: 50px;
+  padding-top: 40px;
   text-align: center;
 }
 
