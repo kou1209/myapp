@@ -1,2 +1,59 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  background-color: #e6e6e6;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.container {
+  width: 70%;
+}
+
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    margin-top: 30px;
+    width: 100%;
+    border-radius:10px;
+    border: 3px solid #e6e6e6;
+    background-color: white;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 0px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
