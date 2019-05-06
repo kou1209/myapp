@@ -31,6 +31,15 @@ body {
   }
 }
 
+.nav li {
+  padding: 6px 20px;
+  margin: 10px 10px;
+  font-size: 12px;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: .3s all;
+}
+
 /* footer */
 footer {
   height: 140px;
@@ -70,7 +79,7 @@ footer {
     margin-left: 0px;
     img {
       display: block;
-      padding: 5px 0;
+      padding: 5px;
     }
   }
   .timestamp {
