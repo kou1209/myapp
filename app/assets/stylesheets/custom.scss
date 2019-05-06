@@ -15,6 +15,21 @@ body {
   width: 70%;
 }
 
+.btn {
+  background-color: #a94442;
+  border: 3px solid #e6e6e6;
+  &:hover {
+    color: #a94442;
+    background-color: white;
+    border: 3px solid #e6e6e6;
+  }
+}
+
+.form-control:focus, input:hover, input:active, textarea:hover, textarea:active{
+    outline: 0;
+    border-color: var(--accent_color ,black);
+    box-shadow: 2px 2px 2px var( --accent_color ,black);
+}
 /* header */
 #logo {
   float: left;
@@ -35,9 +50,10 @@ body {
   padding: 6px 20px;
   margin: 10px 10px;
   font-size: 12px;
-  border: 1px solid white;
+  border: 1px;
   border-radius: 4px;
   transition: .3s all;
+  background-color: #a94442;
 }
 
 /* footer */
@@ -97,4 +113,13 @@ footer {
 .center.jumbotron {
   background-color: white;
   margin-top: 100px;
+}
+
+/* signup-form */
+.row {
+  padding-top: 100px;
+}
+
+.row h1 {
+  text-align: center;
 }
