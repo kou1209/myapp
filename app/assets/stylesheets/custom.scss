@@ -9,15 +9,23 @@ html {
 body {
   background-color: #e6e6e6;
   margin-bottom: 140px;
+  padding-top: 100px;
 }
 
 .container {
   width: 70%;
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .btn {
   background-color: #a94442;
   border: 3px solid #e6e6e6;
+  margin-top: 20px;
+  margin-bottom: 20px;
   &:hover {
     color: #a94442;
     background-color: white;
@@ -54,6 +62,12 @@ body {
   border-radius: 4px;
   transition: .3s all;
   background-color: #a94442;
+  color: #222222;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #222222;
+  font-weight: bold;
 }
 
 /* footer */
@@ -115,11 +129,19 @@ footer {
   margin-top: 100px;
 }
 
-/* signup-form */
 .row {
-  padding-top: 100px;
+  background: white;
+  height: auto;
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 1px solid #222222;
 }
 
-.row h1 {
-  text-align: center;
+.form-control {
+  border-radius: 10px;
+  background: #ffffff;
+  margin-bottom: 30px;
+  width: 100%;
 }
