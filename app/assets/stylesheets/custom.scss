@@ -136,6 +136,9 @@ footer {
   margin: 0 auto;
   border-radius: 10px;
   border: 1px solid #222222;
+  span {
+    margin-left: 20px;
+  }
 }
 
 .form-control {
@@ -153,7 +156,11 @@ footer {
   height: 48px;
   margin: 86px 0 -86px;
   color: #ffffff;
-  background: #FF0000;
+  background: #BB0000;
   position: relative;
   top: -100px;
+}
+
+#session_remember_me {
+  margin-left: 3px;
 }
