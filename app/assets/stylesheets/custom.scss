@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 70%;
+  width: 80%;
 }
 
 h1 {
@@ -38,6 +38,7 @@ h1 {
     border-color: var(--accent_color ,black);
     box-shadow: 2px 2px 2px var( --accent_color ,black);
 }
+
 /* header */
 #logo {
   float: left;
@@ -70,6 +71,15 @@ h1 {
   font-weight: bold;
 }
 
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #a94442;
+}
+
+.dropdown-menu > li > a:hover {
+  background: #a94442;
+  color: white;
+}
+
 /* footer */
 footer {
   height: 140px;
@@ -95,10 +105,11 @@ footer {
   padding: 0;
   li {
     margin-top: 30px;
-    width: 100%;
+    width: 60%;
     border-radius:10px;
     border: 3px solid #e6e6e6;
     background-color: white;
+    margin: 0 auto;
   }
   .user {
     margin-top: 5em;
@@ -108,8 +119,9 @@ footer {
     display: block;
     margin-left: 0px;
     img {
+      padding-top: 30px;
       display: block;
-      padding: 5px;
+      margin: auto;
     }
   }
   .timestamp {
@@ -126,7 +138,8 @@ footer {
 
 .center.jumbotron {
   background-color: white;
-  margin-top: 100px;
+  width: 60%;
+  margin: 100px auto;
 }
 
 .row {
