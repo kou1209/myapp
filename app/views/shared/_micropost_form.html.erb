@@ -3,6 +3,14 @@
   <div class="field">
     <%= f.text_area :content, placeholder: "Compose new micropost..." %>
   </div>
+  <div class="spot_field">
+    <% %w(デート 同窓会 遊び 普段 その他).each do |tag, i| %>
+    <label>
+      <%= f.check_box :tag, { multiple: true }, tag, nil %>
+      <%= tag %>
+    </label>
+    <% end %>
+  </div>
   <%= f.submit "Post", class: "btn btn-primary" %>
   <span class="picture">
     <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>

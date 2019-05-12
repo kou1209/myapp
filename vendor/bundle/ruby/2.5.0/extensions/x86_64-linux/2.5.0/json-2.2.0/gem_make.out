@@ -1,0 +1,13 @@
+current directory: /myapp/vendor/bundle/ruby/2.5.0/gems/json-2.2.0/ext/json
+/usr/local/bin/ruby -r ./siteconf20190511-1-rowe0e.rb extconf.rb
+creating Makefile
+
+current directory: /myapp/vendor/bundle/ruby/2.5.0/gems/json-2.2.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /myapp/vendor/bundle/ruby/2.5.0/gems/json-2.2.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /myapp/vendor/bundle/ruby/2.5.0/gems/json-2.2.0/ext/json
+make "DESTDIR=" install
