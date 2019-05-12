@@ -3,9 +3,8 @@
     <%= link_to "sample app", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "はじめる", signup_path %></li>
         <% if logged_in? %>
-          <li><%= link_to "Users", users_path %></li>
+          <li><%= link_to "新規投稿", users_path %></li>
           <li class="dropdown">
             <a href="#" class="fa dropdown-toggle" data-toggle="dropdown">
               <i class="far fa-user fa-lg"></i>
@@ -13,7 +12,6 @@
             <ul class="dropdown-menu">
               <li><%= link_to "プロフィール", current_user %></li>
               <li><%= link_to "プロフィールを編集", edit_user_path(current_user) %></li>
-              <li><%= link_to "パスワードを変更", edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to "ログアウト", logout_path, method: :delete %>
@@ -21,6 +19,7 @@
             </ul>
           </li>
         <% else %>
+          <li><%= link_to "はじめる", signup_path %></li>
           <li><%= link_to "ログイン", login_path %></li>
         <% end %>
       </ul>
