@@ -3,7 +3,11 @@
   <aside class="col-md-4">
     <section class="user_info">
       <h1>
-        <%= gravatar_for @user %>
+        <% if current_user.image_name %>
+          <%= link_to image_tag(current_user.image_name.url, size: 50), current_user %>
+        <% else %>
+          <%= link_to gravatar_for(current_user, size: 50), current_user %>
+        <% end %>
         <%= @user.name %>
       </h1>
     </section>
