@@ -32,6 +32,10 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
+  def password_edit
+    @user = User.find(params[:id])
+  end
+
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(user_params)
@@ -66,7 +70,7 @@ class UsersController < ApplicationController
 
     def user_params
       params.require(:user).permit(:name, :email, :password,
-                                   :password_confirmation)
+                                   :password_confirmation, :image_name)
     end
 
     # beforeアクション

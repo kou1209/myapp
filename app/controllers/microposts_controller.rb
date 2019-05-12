@@ -12,7 +12,6 @@ class MicropostsController < ApplicationController
       flash[:success] = "投稿しました"
       redirect_to root_url
     else
-      @feed_items = Micropost.paginate(page: params[:page], per_page: 5)
       render 'microposts/new'
     end
   end
