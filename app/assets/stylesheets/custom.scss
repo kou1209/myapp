@@ -39,6 +39,26 @@ h1 {
     box-shadow: 2px 2px 2px var( --accent_color ,black);
 }
 
+.alert {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+  margin: 86px 0 -86px;
+  color: #ffffff;
+  position: relative;
+  top: -104px;
+}
+
+.alert-danger {
+  background-color: #BB0000;
+}
+
+.alert-success {
+  background-color: #00BFFF;
+}
+
 /* header */
 #logo {
   float: left;
@@ -72,12 +92,18 @@ h1 {
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: #a94442;
+  background-color: #a94442;
 }
 
 .dropdown-menu > li > a:hover {
   background: #a94442;
   color: white;
+}
+
+.fa-user {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
 }
 
 /* footer */
@@ -159,19 +185,6 @@ footer {
   background: #ffffff;
   margin-bottom: 30px;
   width: 100%;
-}
-
-.alert {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 48px;
-  margin: 86px 0 -86px;
-  color: #ffffff;
-  background: #BB0000;
-  position: relative;
-  top: -100px;
 }
 
 #session_remember_me {
