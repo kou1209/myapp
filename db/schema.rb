@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_12_064514) do
+ActiveRecord::Schema.define(version: 2019_05_15_120655) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "comments", force: :cascade do |t|
+    t.string "content"
+    t.bigint "user_id"
+    t.bigint "micropost_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["micropost_id"], name: "index_comments_on_micropost_id"
+    t.index ["user_id"], name: "index_comments_on_user_id"
+  end
 
   create_table "microposts", force: :cascade do |t|
     t.text "content"
@@ -48,5 +58,7 @@ ActiveRecord::Schema.define(version: 2019_05_12_064514) do
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
+  add_foreign_key "comments", "microposts"
+  add_foreign_key "comments", "users"
   add_foreign_key "microposts", "users"
 end
