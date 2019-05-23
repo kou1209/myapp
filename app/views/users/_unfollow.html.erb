@@ -1,7 +1,7 @@
-<i class="fas fa-heart"></i>
-<%= render 'shared/stats' %>
+<i class="fas fa-heart my-red"></i>
+<%= render 'shared/stats' %>ありがとう
 <%= form_for(current_user.active_relationships.find_by(followed_id: @user.id),
              html: { method: :delete },
              remote: true) do |f| %>
-  <%= f.submit "Unfollow", class: "btn" %>
+  <%= f.submit "取り消す", class: "btn" %>
 <% end %>
