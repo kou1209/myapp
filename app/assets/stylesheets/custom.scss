@@ -26,6 +26,7 @@ h1 {
   border: 3px solid #e6e6e6;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: white;
   &:hover {
     color: #a94442;
     background-color: white;
@@ -104,6 +105,10 @@ h1 {
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
+}
+
+.my-red {
+  color: red;
 }
 
 /* footer */

@@ -1,3 +1,5 @@
+<i class="far fa-heart"></i>
+<%= render 'shared/stats' %>ありがとう
 <%= form_for(current_user.active_relationships.build, remote: true) do |f| %>
   <div><%= hidden_field_tag :followed_id, @user.id %></div>
   <%= f.submit "ありがとう", class: "btn btn-primary" %>
