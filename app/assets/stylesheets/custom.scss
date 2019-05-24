@@ -134,9 +134,6 @@ footer {
 .microposts {
   list-style: none;
   padding: 0;
-  img {
-    border-radius: 100px;
-  }
   li {
     margin-top: 30px;
     width: 60%;
@@ -151,17 +148,25 @@ footer {
   }
   .content {
     display: block;
-    margin-left: 0px;
+    margin-left: 60px;
+  }
+  .tag {
+    p {
+      background-color: red;
+      margin-bottom: 30px;
+      display: inline-block;
+    }
   }
   .timestamp {
     color: $gray-light;
     display: block;
     margin-left: 60px;
   }
-  .gravatar {
-    float: left;
-    margin-right: 10px;
-    margin-top: 5px;
+}
+
+.user_image_name {
+  img {
+    border-radius: 100px;
   }
 }
 
@@ -192,8 +197,4 @@ footer {
 
 #session_remember_me {
   margin-left: 3px;
-}
-
-.comments {
-
 }

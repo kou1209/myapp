@@ -12,6 +12,7 @@ class CommentsController < ApplicationController
     @comment = @micropost.comments.build(comment_params)
     @comment.user = current_user
     if @comment.save
+      flash[:success] = "コメントを投稿しました"
       redirect_to root_path
     else
       render 'comments/new'
