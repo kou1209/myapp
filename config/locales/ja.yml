@@ -10,11 +10,3 @@ ja:
         updated_at: 更新日時
         email: メールアドレス
         password: パスワード
-
-ja:
-  activerecord:
-    models:
-      comment: コメント
-    attributes:
-      comment:
-        content: コメント
