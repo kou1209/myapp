@@ -134,6 +134,9 @@ footer {
 .microposts {
   list-style: none;
   padding: 0;
+  img {
+    border-radius: 100px;
+  }
   li {
     margin-top: 30px;
     width: 60%;
@@ -149,11 +152,6 @@ footer {
   .content {
     display: block;
     margin-left: 0px;
-    img {
-      padding-top: 30px;
-      display: block;
-      margin: auto;
-    }
   }
   .timestamp {
     color: $gray-light;
@@ -197,5 +195,5 @@ footer {
 }
 
 .comments {
-  
+
 }
