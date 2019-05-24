@@ -1,7 +1,7 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-    <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+    <%= f.text_area :content %>
   </div>
   <div class="spot_field">
     <% %w(デート 同窓会 遊び 普段 その他).each do |tag, i| %>
@@ -14,7 +14,7 @@
   <span class="picture">
     <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
   </span>
-  <%= f.submit "Post", class: "btn btn-primary" %>
+  <%= f.submit "投稿", class: "btn btn-primary" %>
 <% end %>
 
 <script type="text/javascript">
