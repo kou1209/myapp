@@ -1,20 +1,18 @@
 ja:
   activerecord:
     models:
-      user: ユーザー
+      user:
+      micropost:
+      comment:
     attributes:
       user:
-        id: ID
         name: 名前
         created_at: 登録日時
         updated_at: 更新日時
         email: メールアドレス
         password: パスワード
-
-ja:
-  activerecord:
-    models:
-      comment: コメント
-    attributes:
+      micropost:
+        content: 投稿文
+        picture: コーデ
       comment:
         content: コメント
