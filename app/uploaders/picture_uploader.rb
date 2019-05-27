@@ -1,6 +1,8 @@
 class PictureUploader < CarrierWave::Uploader::Base
   include CarrierWave::MiniMagick
-  process resize_to_limit: [600, 600]
+  process resize_to_limit: [400, 800]
+  process :fix_exif_rotation
+
 
   if Rails.env.production?
     storage :fog
@@ -17,5 +19,17 @@ class PictureUploader < CarrierWave::Uploader::Base
   # アップロード可能な拡張子のリスト
   def extension_whitelist
     %w(jpg jpeg gif png)
+  end
+
+  module CarrierWave
+    module MiniMagick
+      def fix_exif_rotation
+        manipulate! do |img|
+          img.auto_orient
+          img = yield(img) if block_given?
+          img
+        end
+      end
+    end
   end
 end

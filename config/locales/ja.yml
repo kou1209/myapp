@@ -4,6 +4,7 @@ ja:
       user:
       micropost:
       comment:
+      will_paginate:
     attributes:
       user:
         name: 名前
@@ -16,3 +17,7 @@ ja:
         picture: コーデ
       comment:
         content: コメント
+  will_paginate:
+    previous_label: "前"
+    next_label: "次"
+    page_gap: "…"

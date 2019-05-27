@@ -12,8 +12,16 @@ body {
   padding-top: 100px;
 }
 
+.about {
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+}
+
 .container {
-  width: 80%;
+  width: 60%;
 }
 
 h1 {
@@ -170,6 +178,10 @@ footer {
   }
 }
 
+.comments p {
+  width: auto;
+}
+
 .center.jumbotron {
   background-color: white;
   width: 60%;
@@ -197,4 +209,8 @@ footer {
 
 #session_remember_me {
   margin-left: 3px;
+}
+
+.pagination {
+  margin-left: 100px;
 }
