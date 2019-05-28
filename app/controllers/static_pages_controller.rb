@@ -7,9 +7,6 @@ class StaticPagesController < ApplicationController
     end
   end
 
-  def rules
-  end
-
   def about
   end
 

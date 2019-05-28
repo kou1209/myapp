@@ -14,6 +14,7 @@ if Rails.env.production?
 
   # 日本語ファイル名の設定
   CarrierWave::SanitizedFile.sanitize_regexp = /[^[:word:]\.\-\+]/
+  # スマホ画像を縦向きにする設定
   module CarrierWave
     module MiniMagick
       def fix_exif_rotation
