@@ -109,10 +109,8 @@ h1 {
   color: white;
 }
 
-.fa-user {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
+.fa-user-tag {
+  font-size: 20px;
 }
 
 .my-red {
@@ -259,4 +257,8 @@ footer {
 #error_explanation {
   text-align: center;
   color: red;
+}
+
+img {
+  border: 1px solid black;
 }
