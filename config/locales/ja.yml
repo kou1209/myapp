@@ -12,6 +12,7 @@ ja:
         updated_at: 更新日時
         email: メールアドレス
         password: パスワード
+        image_name: プロフィール画像
       micropost:
         content: 投稿文
         picture: コーデ

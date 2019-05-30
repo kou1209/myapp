@@ -159,7 +159,12 @@ footer {
   }
   .tag {
     p {
-      background-color: red;
+      border-radius: 10px;
+      font-weight: bold;
+      color: white;
+      border: 3px solid #666666;
+      background-color: #00BFFF;
+      font-size: 17px;
       margin-bottom: 30px;
       display: inline-block;
     }
@@ -238,4 +243,20 @@ footer {
 
 .user_avatars img {
   border-radius: 100px;
+}
+
+.field, .spot_field, .post_form, .post_picture, #micropost_picture, .comment-form {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#micropost_content, #comment_content {
+  width: 60%;
+  height: 100px;
+  border-radius: 10px;
+}
+
+#error_explanation {
+  text-align: center;
+  color: red;
 }

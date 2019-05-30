@@ -1,21 +1,33 @@
-<%= form_for(@micropost) do |f| %>
-  <%= render 'shared/error_messages', object: f.object %>
-  <div class="field">
-    <%= f.text_area :content %>
-  </div>
-  <div class="spot_field">
-    <% %w(デート 同窓会 遊び 普段 その他).each do |tag, i| %>
-    <label>
-      <%= f.check_box :tag, { multiple: true }, tag, nil %>
-      <%= tag %>
-    </label>
-    <% end %>
-  </div>
-  <span class="picture">
-    <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
-  </span>
-  <%= f.submit "投稿", class: "btn btn-primary" %>
-<% end %>
+<div class="row">
+  <h1>新規投稿</h1>
+  <%= form_for(@micropost) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <div class="field">
+      <%= f.label :content, "投稿文（必須）" %>
+      <br>
+      <%= f.text_area :content %>
+    </div>
+    <br><br>
+    <div class="spot_field">
+      <%= f.label :tag, "コーディネートのシーンを選択（任意）" %>
+      <br>
+      <% %w(デート 同窓会 遊び 普段 その他).each do |tag, i| %>
+      <label>
+        <%= f.check_box :tag, { multiple: true }, tag, nil %>
+        <%= tag %>
+      </label>
+      <% end %>
+    </div>
+    <br><br>
+    <div class="post_picture">
+      <%= f.label :image_name, "コーディネート写真（必須）" %>
+      <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
+    </div>
+    <div class="post_form">
+      <%= f.submit "投稿", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
 
 <script type="text/javascript">
   $('#micropost_picture').bind('change', function() {
