@@ -194,6 +194,7 @@ footer {
 
 .row {
   margin: 0 auto;
+  margin-top: 30px;
   background: white;
   width: 60%;
   border-radius: 10px;
@@ -229,4 +230,12 @@ footer {
   .stats {
     text-align: center;
   }
+}
+
+.thanks_user_info {
+  float: left;
+}
+
+.user_avatars img {
+  border-radius: 100px;
 }
