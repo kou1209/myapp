@@ -1,6 +1,6 @@
 if Rails.env.production?
-  process :fix_exif_rotation
   CarrierWave.configure do |config|
+    process :fix_exif_rotation
     config.fog_provider = 'fog/aws'
     config.fog_credentials = {
       # Amazon S3用の設定
