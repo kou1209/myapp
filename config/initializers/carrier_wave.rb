@@ -1,4 +1,5 @@
 if Rails.env.production?
+  process :fix_exif_rotation
   CarrierWave.configure do |config|
     config.fog_provider = 'fog/aws'
     config.fog_credentials = {
