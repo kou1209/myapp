@@ -18,6 +18,9 @@
   footer {
     width: 100%;
     height: auto;
+    nav {
+      display: flex;
+    }
   }
   .alert {
     top: -80px;
