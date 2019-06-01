@@ -22,7 +22,9 @@
   .alert {
     top: -80px;
   }
-  .micropost_img {
-    width: 100%;
+  .microposts {
+    .micropost_img {
+      width: 100%;
+    }
   }
 }
