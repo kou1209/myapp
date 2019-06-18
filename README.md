@@ -1,24 +1,18 @@
-# README
+# 洋服相談サイト
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+オリジナルポートフォリオになります。
+https://www.fuku-soudan.com/
 
-Things you may want to cover:
+# 実装した機能
 
-* Ruby version
+* ありがとう機能（いいね機能）
 
-* System dependencies
+* 画像アップロード機能（本番環境はS3を使用）
 
-* Configuration
+* コメント機能
 
-* Database creation
+* ログイン機能
 
-* Database initialization
+* dockerfileにアプリケーション情報を記述
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* RSpec（途中。現在はmodel specのみ）
