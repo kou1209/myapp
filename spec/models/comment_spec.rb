@@ -7,8 +7,9 @@ RSpec.describe Comment, type: :model do
     expect(comment).to be_valid
   end
 
-  it "hoge" do
-    comment = FactoryBot.create(:comment, content: nil)
+  # コメントがなければ無効な状態であること
+  it "is invalid without a comment.content" do
+    comment = FactoryBot.build(:comment, content: nil)
     comment.valid?
     expect(comment.errors[:content]).to include("を入力してください")
   end
