@@ -1,6 +1,9 @@
 # 洋服相談サイト
 
 オリジナルポートフォリオになります。
+メールアドレス：test@test.com
+パスワード：testtest
+でログインできます。
 https://www.fuku-soudan.com/
 
 # 実装した機能
