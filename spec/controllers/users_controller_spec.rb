@@ -5,7 +5,7 @@ RSpec.describe UsersController, type: :controller do
     # 正常にレスポンスを返すこと
     it "responds successfully" do
       get :new
-      expect(response).to be_succes
+      expect(response).to be_success
     end
 
     # 200レスポンスを返すこと
